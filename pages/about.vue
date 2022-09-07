@@ -1,10 +1,7 @@
-<page>
-title: About
-</page>
-
 <script setup>
 	import logos from '@/assets/logo.svg'
 	import logosSmall from '@/assets/logo.svg'
+	definePageMeta({ title: 'About' })
 </script>
 
 <template>

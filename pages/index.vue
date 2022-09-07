@@ -1,6 +1,6 @@
-<page>
-title: Home
-</page>
+<script setup>
+	definePageMeta({ title: 'Home' })
+</script>
 
 <template>
 	<div>
