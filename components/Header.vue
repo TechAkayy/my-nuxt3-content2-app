@@ -15,6 +15,7 @@
 					<li><a href="/">Home</a></li>
 					<li><a href="/about">About</a></li>
 					<li><a href="/blog">Blog</a></li>
+					<li><a href="/store">Store</a></li>
 					<!-- <li><a href="/feed">Feed</a></li> -->
 					<!-- <NavBarLinks client:none /> -->
 				</ul>
