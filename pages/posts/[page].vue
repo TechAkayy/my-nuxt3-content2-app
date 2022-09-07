@@ -12,15 +12,28 @@
 </script>
 
 <script setup>
-	defineProps({
-		items: [],
-		nextPage: Number,
-		prevPage: Number
-	})
+	// defineProps({
+	// 	items: [],
+	// 	nextPage: Number,
+	// 	prevPage: Number
+	// })
+
+	const slug = useRoute().params.page.toString().replace(/,/g, '/')
+	const { data: post } = await useAsyncData(slug, () =>
+		queryContent(`posts/${slug}`).findOne()
+	)
 </script>
 
 <template layout="default">
 	<div>
+		<ClientOnly>
+			<ContentRenderer :value="post">
+				<template #empty>
+					<p>No content found.</p>
+				</template>
+			</ContentRenderer>
+		</ClientOnly>
+		<!-- <div>
 		<h1
 			class="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl"
 		>
@@ -58,5 +71,6 @@
 				<router-link :to="{ params: { page: nextPage } }">Older →</router-link>
 			</div>
 		</div>
+	</div> -->
 	</div>
 </template>
