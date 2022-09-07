@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { usePage } from 'iles'
-	import { getPosts } from '@/composables/posts'
+	import { getPosts } from '~/composables/posts'
 
 	const posts = $(getPosts())
 

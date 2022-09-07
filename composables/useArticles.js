@@ -1,6 +1,6 @@
 // import { getAssetURL } from '~/logic/assets'
 // import { formatRelativeTime } from '@utils/format-relative-time'
-import { useDirectus } from '@/composables/useDirectus'
+import { useDirectus } from '~/composables/useDirectus'
 
 // export interface Author {
 // 	first_name: string

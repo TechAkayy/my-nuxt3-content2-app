@@ -1,6 +1,6 @@
 <script setup>
-	import { getPosts } from '@/composables/posts'
-	import Card from '@/components/Card.vue'
+	import { getPosts } from '~/composables/posts'
+	import Card from '~/components/Card.vue'
 
 	let posts = $(getPosts())
 	definePageMeta({ alias: ['/posts'] })

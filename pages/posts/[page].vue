@@ -1,7 +1,7 @@
 <script>
 	// import { definePageComponent } from 'iles'
-	import { getPosts } from '@/composables/posts'
-	import { paginate } from '@/composables/pagination'
+	import { getPosts } from '~/composables/posts'
+	import { paginate } from '~/composables/pagination'
 
 	// export default definePageComponent({
 	// 	getStaticPaths() {

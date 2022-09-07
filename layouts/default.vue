@@ -8,5 +8,5 @@
 <template><Header /><slot /><Footer /></template>
 
 <style>
-	@import '@/assets/styles/global.css';
+	@import '~/assets/styles/global.css';
 </style>
