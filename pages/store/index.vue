@@ -55,7 +55,7 @@
 
 	// Set header
 	useHead({
-		title: 'Content Merch'
+		title: 'Store'
 	})
 </script>
 
@@ -109,7 +109,7 @@
 								v-if="i === 0 && !activeCategory"
 							/>
 							<NuxtLink
-								:to="`/merch/${p.id}`"
+								:to="`/store/${p.id}`"
 								:class="{ 'lg:col-start-3': i === 0 && !activeCategory }"
 								class="rounded-md bg-white hover:shadow-lg transition-all hover:cursor-pointer"
 							>

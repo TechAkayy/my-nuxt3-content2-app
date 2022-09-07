@@ -5,9 +5,9 @@ export default defineNuxtConfig({
 	modules: ['@nuxt/content'],
 	content: {
 		// https://content.nuxtjs.org/api/configuration
-		highlight: {
-			theme: 'dracula-soft'
-		}
+		// highlight: {
+		// 	theme: 'dracula-soft'
+		// }
 	},
 	experimental: {
 		reactivityTransform: true
