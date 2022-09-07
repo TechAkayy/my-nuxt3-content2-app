@@ -5,7 +5,9 @@
 				<router-link to="/about">About</router-link>
 </div> -->
 
-<template><Header /><slot /><Footer /></template>
+<template>
+	<div><Header /><slot /><Footer /></div>
+</template>
 
 <style>
 	@import '~/assets/styles/global.css';
