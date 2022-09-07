@@ -10,8 +10,6 @@ TL;DR: Vue 3 is now the new default version as of **Monday, February 7, 2022**!
 
 Make sure to read the [Potential Required Actions](/posts/vue-3-as-the-new-default.html#potential-required-actions) section to see if you need to make certain changes before the switch to avoid breakage.
 
-<Excerpt/>
-
 ## From a Library to a Framework
 
 When Vue first started, it was just a runtime library. Over the years, it has evolved into a framework that encompasses many sub projects:
