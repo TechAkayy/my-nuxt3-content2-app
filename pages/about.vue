@@ -1,6 +1,6 @@
 <script setup>
-	import logos from '~/assets/logo.svg'
-	import logosSmall from '~/assets/logo.svg'
+	import logos from '~/assets/images/logo.svg'
+	import logosSmall from '~/assets/images/logo.svg'
 	definePageMeta({ title: 'About' })
 </script>
 
