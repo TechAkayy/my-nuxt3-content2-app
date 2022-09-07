@@ -22,6 +22,10 @@
 	const { data: post } = await useAsyncData(slug, () =>
 		queryContent(`posts/${slug}`).findOne()
 	)
+
+	useHead({
+		title: post.value.title
+	})
 </script>
 
 <template layout="default">
