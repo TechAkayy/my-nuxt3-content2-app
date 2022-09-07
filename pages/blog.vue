@@ -4,11 +4,15 @@
 
 	let posts = $(getPosts())
 	definePageMeta({ alias: ['/posts'] })
+
+	const route = useRoute()
+	const title = route.meta.title
+	const description = route.meta.description
 </script>
 
 <template>
 	<div>
-		<Showcase :heading="$site.title" :text="$site.description" />
+		<Showcase :heading="title" :text="description" />
 		<PageContent>
 			<Card v-for="post in posts" :key="post.href">
 				<h2>{{ post.title }}</h2>
