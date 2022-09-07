@@ -17,7 +17,7 @@
 			<Card v-for="post in posts" :key="post.href">
 				<h2>{{ post.title }}</h2>
 				<p>
-					<component :is="post" excerpt />
+					<!-- <component :is="post" excerpt /> -->
 				</p>
 				<a :href="post._path" class="btn">Read More</a>
 			</Card>
