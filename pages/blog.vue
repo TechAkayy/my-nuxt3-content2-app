@@ -2,7 +2,7 @@
 	import { getPosts } from '~/composables/posts'
 	import Card from '~/components/Card.vue'
 
-	let posts = $(getPosts())
+	let posts = await getPosts()
 	definePageMeta({ alias: ['/posts'] })
 
 	const route = useRoute()
@@ -19,7 +19,7 @@
 				<p>
 					<component :is="post" excerpt />
 				</p>
-				<a :href="post.href" class="btn">Read More</a>
+				<a :href="post._path" class="btn">Read More</a>
 			</Card>
 		</PageContent>
 	</div>
