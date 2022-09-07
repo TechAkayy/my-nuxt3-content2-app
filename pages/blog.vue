@@ -10,16 +10,18 @@ alias: ['/posts']
 </script>
 
 <template>
-	<Showcase :heading="$site.title" :text="$site.description" />
-	<PageContent>
-		<Card v-for="post in posts" :key="post.href">
-			<h2>{{ post.title }}</h2>
-			<p>
-				<component :is="post" excerpt />
-			</p>
-			<a :href="post.href" class="btn">Read More</a>
-		</Card>
-	</PageContent>
+	<div>
+		<Showcase :heading="$site.title" :text="$site.description" />
+		<PageContent>
+			<Card v-for="post in posts" :key="post.href">
+				<h2>{{ post.title }}</h2>
+				<p>
+					<component :is="post" excerpt />
+				</p>
+				<a :href="post.href" class="btn">Read More</a>
+			</Card>
+		</PageContent>
+	</div>
 </template>
 
 <style scoped>
