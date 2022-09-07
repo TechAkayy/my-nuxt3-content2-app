@@ -22,7 +22,9 @@ function byDate(a, b) {
 }
 
 export async function getPosts() {
-	const { data } = await useAsyncData('posts', () => queryContent('/').find())
+	const { data } = await useAsyncData('posts', () =>
+		queryContent('/posts').find()
+	)
 	return data
 	// const posts = useDocuments('~/pages/posts')
 	// return computed(() => posts.value.sort(byDate))
