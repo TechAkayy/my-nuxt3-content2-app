@@ -1,6 +1,6 @@
 <script setup>
-	import logos from '../images/framework-logos.png'
-	import logosSmall from '../images/framework-logos-small.png'
+	import logos from '~/assets/images/framework-logos.png'
+	import logosSmall from '~/assets/images/framework-logos-small.png'
 </script>
 
 <template>
